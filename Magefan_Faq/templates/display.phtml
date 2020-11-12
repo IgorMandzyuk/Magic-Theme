@@ -1,0 +1,15 @@
+<h1>This is template from Magic theme!</h1>
+
+<?php /** @var $block \Magefan\Faq\Block\Faq */ ?>
+<!-- Call block function -->
+
+<?php if (!is_null($block->getFaqItem())){?>
+ <?php $question = $block->getFaqItem(); ?>
+   <h3><?php echo $question->getData('question')?></h3></br>
+    <h4><?php echo $question->getData('answer');  ?></h4></br>
+    <?php }else{ ?>
+    <h1>This question not found. Please try with another id</h1>
+    <?php } ?>
+
+ <!-- <?php // $viewModel = $block->getViewModel(); ?> -->
+ <!-- <?php // echo $block->escapeHtml($viewModel->display()); ?> -->
