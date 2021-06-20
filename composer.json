@@ -9,6 +9,7 @@
     "magento/framework": "*",
     "magento/theme-frontend-blank": "*"
   },
+  "minimum-stability": "dev",
   "type": "magento2-theme",
   "license": [
     "OSL-3.0",
